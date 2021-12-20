@@ -1,0 +1,10 @@
+{
+    "name": "API CHat WatSon Conversation assistantion",
+    "description": " API do chat bot",
+    "repository": "https://github.com/gilberto-009199/watson-chat",
+    "logo": "https://nodejs.org/static/images/logo.svg",
+    "keywords": [
+      "nodejs",
+      "watson"
+    ]
+  }
