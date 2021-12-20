@@ -1,0 +1,631 @@
+{
+  "intents": [
+    {
+      "intent": "desktop.java.experiencia",
+      "examples": [
+        {
+          "text": "Já utilizou o JAVA SE"
+        },
+        {
+          "text": "Ja usou um JButton"
+        },
+        {
+          "text": "Conhece JFrame?"
+        },
+        {
+          "text": "Já utilizou o Swing?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "facultade.curso.experiencia",
+      "examples": [
+        {
+          "text": "Oque você esta fazendo na faculdade?"
+        }
+      ],
+      "description": "cursos de coisas de valor academico"
+    },
+    {
+      "intent": "jspjsf.web.java.exeperiencia",
+      "examples": [
+        {
+          "text": "Conhece JSP"
+        },
+        {
+          "text": "Já usou JSF?"
+        }
+      ],
+      "description": "Web Java"
+    },
+    {
+      "intent": "tecnico.curso.experiencia",
+      "examples": [
+        {
+          "text": "Você fez um técnico?"
+        }
+      ],
+      "description": "Cursos de valor tecnico"
+    },
+    {
+      "intent": "pratica.experiencia",
+      "examples": [
+        {
+          "text": "Já trabalhou em uma empresa?"
+        },
+        {
+          "text": "Em quais empresas você já trabalhou"
+        },
+        {
+          "text": "Trabalhou aonde?"
+        },
+        {
+          "text": "trabalhou"
+        },
+        {
+          "text": "Já trabalhou em um projeto de verdade?"
+        }
+      ],
+      "description": "Já trabalhou em um projeto de verdade?"
+    },
+    {
+      "intent": "php.experiencia",
+      "examples": [
+        {
+          "text": "Você já utilizou PHP?"
+        },
+        {
+          "text": "Já usou php?"
+        },
+        {
+          "text": "Você já utilizou PHP"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "nodejs.experiencia",
+      "examples": [
+        {
+          "text": "js"
+        },
+        {
+          "text": "Já usou Nodejs"
+        },
+        {
+          "text": "Conhece JavaScript?"
+        },
+        {
+          "text": "Experiencia em js"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "android.java.experiencia",
+      "examples": [
+        {
+          "text": "Você já fez uma aplicação em android?"
+        },
+        {
+          "text": "Android"
+        },
+        {
+          "text": "Já usou Android studio?"
+        },
+        {
+          "text": "Já produziu aplicativos?"
+        }
+      ],
+      "description": "Experiencia com java Android"
+    },
+    {
+      "intent": "web.java.experiencia",
+      "examples": [
+        {
+          "text": "Conhece quais tecnologias java web?"
+        },
+        {
+          "text": "java web"
+        },
+        {
+          "text": "Java EE"
+        },
+        {
+          "text": "Oque acha sobre Java Web?"
+        },
+        {
+          "text": "java web?"
+        }
+      ],
+      "description": "Java Web"
+    },
+    {
+      "intent": "java.experiencia",
+      "examples": [
+        {
+          "text": "Desenvolvimento Java"
+        },
+        {
+          "text": "Voce conhece Java?"
+        },
+        {
+          "text": "Você conhece JAVA?"
+        },
+        {
+          "text": "Já desenvolveu alguma coisa em java?"
+        },
+        {
+          "text": "Oque você sabe sobre java?"
+        },
+        {
+          "text": "Oque você acha sobre java?"
+        },
+        {
+          "text": "Já trabalhou com java?"
+        }
+      ],
+      "description": "Perguntas sobre a parte de java"
+    },
+    {
+      "intent": "experiencia",
+      "examples": [
+        {
+          "text": "Qual sua experiência?"
+        },
+        {
+          "text": "Você trabalhou aonde?"
+        },
+        {
+          "text": "Aonde você já trabalhou?"
+        },
+        {
+          "text": "Quais áreas você já trabalhou?"
+        }
+      ],
+      "description": "Qual sua experiencia?(Geral)"
+    },
+    {
+      "intent": "curso.experiencia",
+      "examples": [
+        {
+          "text": "Quais cursos ou certificados você tem?"
+        }
+      ],
+      "description": "Cursos já feitos"
+    },
+    {
+      "intent": "web.experiencia",
+      "examples": [
+        {
+          "text": "Você já trabalhou com desenvolvimento de Sites?"
+        },
+        {
+          "text": "Você já trabalha com web?"
+        },
+        {
+          "text": "Qual sua experiencia com desenvolvimento Web"
+        },
+        {
+          "text": "Oque você sabe sobre HTML/CSS/JS"
+        },
+        {
+          "text": "Web"
+        }
+      ],
+      "description": "Qual sua experiencia em desenvolvimento web?"
+    },
+    {
+      "intent": "spring.web.java.experiencia",
+      "examples": [
+        {
+          "text": "Já usou spring boot?"
+        },
+        {
+          "text": "Oque vc conhece sobre spring boot"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "base",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "O PHP foi minha 2° linguagem quando comecei a desenvolver a web, já fiz alguns trabalhos de freelancer passando sistema PHP legado para a versão 7.0 da linguagem"
+              },
+              {
+                "text": "Usei PHP no meu tcc! Foi extremamente interessante criar um sistema MVC em PHP utilizando rotas , fora que me ajudou em um projeto de CodeIgniter para o sistema wtinvest"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1591382775242",
+      "conditions": "#php.experiencia",
+      "dialog_node": "node_4_1591382975776"
+    },
+    {
+      "type": "standard",
+      "title": "base",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Conheço e gosto da criação de sites com HTML, CSS e JS,mas também sei usar web component com react e vue com hooks."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1591382548388",
+      "conditions": "#web.experiencia",
+      "dialog_node": "node_1_1591383055775",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "folder",
+      "title": "Trabalhou Aonde?",
+      "parent": "node_8_1591382327130",
+      "conditions": "#pratica.experiencia",
+      "dialog_node": "node_4_1591383284365",
+      "previous_sibling": "node_10_1591382775242"
+    },
+    {
+      "type": "folder",
+      "title": "JAVA",
+      "parent": "node_8_1591382327130",
+      "conditions": "#java.experiencia || #jspjsf.web.java.exeperiencia || #spring.web.java.experiencia || #web.java.experiencia || #android.java.experiencia",
+      "dialog_node": "node_9_1591382667632",
+      "previous_sibling": "node_9_1591382548388"
+    },
+    {
+      "type": "folder",
+      "title": "curso",
+      "parent": "node_8_1591382327130",
+      "conditions": "#curso.experiencia || #facultade.curso.experiencia || #tecnico.curso.experiencia",
+      "dialog_node": "node_1_1591391679964",
+      "previous_sibling": "node_4_1591383284365"
+    },
+    {
+      "type": "standard",
+      "title": "base",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Já trabalhei com Nodejs, em uma empresa que fazia integrações com ERP's do mercado apra fornecer uma sistema de vendas. Fora isso eu criei projetos web, desktop e android usando Java , PHP e NodeJS."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1591382327130",
+      "conditions": "#experiencia",
+      "dialog_node": "node_7_1591385349740",
+      "previous_sibling": "node_1_1591391679964"
+    },
+    {
+      "type": "folder",
+      "title": "Nodejs",
+      "parent": "node_8_1591382327130",
+      "conditions": "#nodejs.experiencia",
+      "dialog_node": "node_7_1591382749705",
+      "previous_sibling": "node_9_1591382667632"
+    },
+    {
+      "type": "folder",
+      "title": "PHP",
+      "parent": "node_8_1591382327130",
+      "conditions": "#php.experiencia",
+      "dialog_node": "node_10_1591382775242",
+      "previous_sibling": "node_7_1591382749705"
+    },
+    {
+      "type": "folder",
+      "title": "WEB",
+      "parent": "node_8_1591382327130",
+      "conditions": "#web.experiencia",
+      "dialog_node": "node_9_1591382548388"
+    },
+    {
+      "type": "standard",
+      "title": "base",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Trabalhei na E-catlogos  uma empresa de catalogo eletrônico, que utilizava PHP e Nodejs para o sistema web e integrações. Depois na wtinvest, uma empresa de investimentos que usava CodeIgniter para o seu sistema web. Fora isso tenho feito freelancer e procurado um trabalho fixo."
+              },
+              {
+                "text": "Na época em que eu trabalhava na ecatalogos cuidava junto com outros no front end do painel do usuario e no back end fazendo paginação e cruds."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1591383284365",
+      "conditions": "#pratica.experiencia",
+      "dialog_node": "node_5_1591388006716"
+    },
+    {
+      "type": "standard",
+      "title": "Tecnico",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Cursei no ensino médio redes de computadores e técnico em Informatica.\nEstudando Dimensionamento e serviços de redes e\ndesenvolvimento web, desktop e android na informatica"
+              },
+              {
+                "text": "Foi uma excelente experiencia, aonde aprendi as bases das áreas mais conhecidas da computação: redes e informatica."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1591391679964",
+      "conditions": "#tecnico.curso.experiencia",
+      "dialog_node": "node_7_1591393465103",
+      "previous_sibling": "node_8_1591393048640"
+    },
+    {
+      "type": "standard",
+      "title": "faculdade acadêmico",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Estou cursando Ciência da Computação e me tornando um programador melhor a cada dia!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1591391679964",
+      "conditions": "#facultade.curso.experiencia",
+      "dialog_node": "node_8_1591393048640"
+    },
+    {
+      "type": "standard",
+      "title": "Java EE",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "O Java EE estabeleceu especificações enormes no desenvolvimento em java, e hoje em dia com spring boot e kafka para streaming a beleza da programação em java esta vinculada com a eficiência de aplicações bem feitas! "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1591382667632",
+      "conditions": "#web.java.experiencia",
+      "dialog_node": "node_4_1591395611309",
+      "previous_sibling": "node_5_1591391986910"
+    },
+    {
+      "type": "standard",
+      "title": "JSPJSF",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ja utilizei JSF e JSP, Pessoal mente gostei muito da  ideia de vincular a pagina web com o codigo do ManageBean do lado do servidor. E pessoalmente JSP foi uma das primeiras formas que apreendi a interagir com a pagina e com formulários no backend"
+              },
+              {
+                "text": "JSF e JSP é uma forma um pouco antiga de lidar com requisições por servelets, mas fiz um projeto em https://github.com/gilberto-009199/JAgendaWeb  em JSP. Fora isso eu já usei o Primefaces com JSF para experimentar é gostei muito do estilo @ViewScoped e ManageBean "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1591382667632",
+      "conditions": "#jspjsf.web.java.exeperiencia",
+      "dialog_node": "node_9_1591389606920",
+      "previous_sibling": "node_5_1591383047533"
+    },
+    {
+      "type": "standard",
+      "title": "Android",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Já desenvolvi aplicativos em Android usando Java e Kotlin no Android Studio. Fora isso utilizei bibliotecas como retrofit para acessar Apis."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1591382667632",
+      "conditions": "#android.java.experiencia",
+      "dialog_node": "node_3_1591399193916",
+      "previous_sibling": "node_4_1591395611309"
+    },
+    {
+      "type": "standard",
+      "title": "spring",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "O spring boot é uma plataforma incrível, criação de APIS Restfull, MVC e manipulação de paginas com thimeleaft. Tudo isso em um único build simples. Além é claro de poder usar paginas  JSF e JSP de projetos legados caso seja necessário."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1591382667632",
+      "conditions": "#spring.web.java.experiencia",
+      "dialog_node": "node_5_1591391986910",
+      "previous_sibling": "node_9_1591389606920"
+    },
+    {
+      "type": "standard",
+      "title": "base",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Java é uma linguagem excelente e ja usei para desenvolvimento web, desktop e android."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1591382667632",
+      "conditions": "#java.experiencia",
+      "dialog_node": "node_5_1591383047533"
+    },
+    {
+      "type": "standard",
+      "title": "base",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "O meu primeiro emprego foi com NodeJS, lá a gente usava express, pug e socket.io para criação de rotas, paginas e chat, acho ele simplesmente sensacional com sua flexibilidade"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1591382749705",
+      "conditions": "#nodejs.experiencia",
+      "dialog_node": "node_9_1591383014484"
+    },
+    {
+      "type": "standard",
+      "title": "Em outros casos",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Eu não entendi. Você pode tentar reformular a frase."
+              },
+              {
+                "text": "Você pode reformular sua afirmação? Eu não estou entendendo."
+              },
+              {
+                "text": "Eu não entendi o sentido."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Em outros casos",
+      "previous_sibling": "node_4_1591380746905",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "standard",
+      "title": "Perguntas gerais",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_4_1591380746905",
+      "previous_sibling": "node_8_1591382327130"
+    },
+    {
+      "type": "folder",
+      "title": "Experiencia",
+      "conditions": "#experiencia || #android.java.experiencia || #desktop.java.experiencia || #java.experiencia || #jspjsf.web.java.exeperiencia || #nodejs.experiencia || #php.experiencia || #spring.web.java.experiencia || #web.experiencia || #pratica.experiencia || #facultade.curso.experiencia || #tecnico.curso.experiencia || #web.java.experiencia",
+      "dialog_node": "node_8_1591382327130",
+      "previous_sibling": "Bem-vindo"
+    },
+    {
+      "type": "standard",
+      "title": "Bem-vindo",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Olá. Como posso te ajudar?"
+              },
+              {
+                "text": "Bem vindo, Oque deseja?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Bem-vindo"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "disambiguation": {
+      "prompt": "Você quis dizer:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "Nenhuma das anteriores"
+    },
+    "system_entities": {
+      "enabled": true
+    },
+    "human_agent_assist": {
+      "prompt": "Você quis dizer:"
+    }
+  },
+  "learning_opt_out": false,
+  "name": "Dialogo Default",
+  "language": "pt-br",
+  "description": "Dialogo com um entrevistador ou coisa similar"
+}
