@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "Servicor de teste",
   "main": "index.js",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist",
   "scripts": {
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"

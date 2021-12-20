@@ -1,11 +1,9 @@
 const AssistantV2 = require('ibm-watson/assistant/v2');
 const { IamAuthenticator } = require('ibm-watson/auth');
 
-//const apikey      = 'IPyInhW3MK--gihmNpdYuM0QjhgxjAxLCb6AwQL8q3Nq';
-//const apikey      = '-aMIvhGV694Ft9-WWNc5Oz6GKl56EXYLpOY-01qR8J3x';
-const apikey        = 'TOANailup4dgM7lfEUV-GgywVSdIWlGN67I7-pzUihEI';
-const assistantId = '469afca5-e57b-4ce6-899a-849d02f8b812';
-//const assistantId = '40e242ae-d4e2-4cef-b3db-f8453b0693ff';
+const apikey        = 'PXjL2qLfXRUS1NDyTx281edvtE5JQFlRbluSjNdFUF9i';
+const assistantId = '4ec50193-b8f9-42d6-bc50-f3521383c297';
+
 
 class Manager{
 	
@@ -18,7 +16,7 @@ class Manager{
         console.log("@Enviando ..... ",message)
     	return this.assistant.message({
 			input: { text: message },
-			assistantId: '4ec50193-b8f9-42d6-bc50-f3521383c297',
+			assistantId: assistantId,
 			sessionId: sessionId,
 		  }
 		  )
@@ -42,7 +40,7 @@ class Manager{
 	createSession(){
 		let ctx = this;
 		return this.assistant.createSession({
-		  assistantId: '4ec50193-b8f9-42d6-bc50-f3521383c297',
+		  assistantId: assistantId,
 		})
 		.then(res => {
 			
@@ -64,12 +62,11 @@ class Manager{
 	}
 
 	build(){
-	  console.log("BUILD CHAMADO")
 	 if(!this.assistant)this.assistant = new AssistantV2({
 						  version: '2020-04-01',
 						  serviceName:'assistant',
 						  authenticator: new IamAuthenticator({
-							apikey: 'PXjL2qLfXRUS1NDyTx281edvtE5JQFlRbluSjNdFUF9i',
+							apikey: apikey,
 							//url: 'https://api.us-east.assistant.watson.cloud.ibm.com/instances/a328afd3-95ed-449c-a33d-9ca8e5add507'
 						  }),
 						  //url: 'https://gateway.watsonplatform.net/assistant/api/',
@@ -77,8 +74,6 @@ class Manager{
 						  //serviceUrl:'https://api.us-east.assistant.watson.cloud.ibm.com/instances/f71d801a-6ba6-44c2-90e0-3da304c82619',
 						  //disableSslVerification: true
 					 });
-	console.log("BUILD EXCECUTADO")
-
 	  	
 	}
 
