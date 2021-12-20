@@ -13,7 +13,6 @@ class Manager{
 	}
 	
     sendMessage(sessionId,  message){
-        console.log("@Enviando ..... ",message)
     	return this.assistant.message({
 			input: { text: message },
 			assistantId: assistantId,
